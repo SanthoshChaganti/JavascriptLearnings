@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let a=[1,2,3,4,5];
+    let b=[6,7,8,9,10];      //concat  function creates new array but not change existing array
+    let d=[11,12,13,14,15]
+    let c=a.concat(b);
+    console.log(c);
+    console.log(a,b);
+    let e=a.concat(b,d);
+    console.log(e);
+
+    let compare = (a,b)=>{
+        return a-b;                // a-b to sort the numbers in ascending order.b-a for descinding order.
+    }
+
+    let f=[23,12,65,9,278,27];  // sorts alphabetically  as these are taken as strings.
+    f.sort();                   // sort function make changes in the original list.
+    console.log(f);
+    f.sort(compare);
+    console.log(f);
+
+    f.reverse();  // reverse the given array.make changes in the original array.
+    console.log(f);
+
+
+
+    
+    let num=[2,5,6,9,25,67,12,78,98,24];                   //return deleted array and modifies original array                                                                                  
+    let deleted_values=num.splice(4,3,1024,1025,1026);
+    console.log(deleted_values);                         // splice add the numbers what we want to add and where we want to add.   
+    console.log(num);                                    // splice(startindex,numberofpositions,all vaues)     
+    num.splice(4,3,1024,1025,1026,1027,1028);           // and if want to add we can add extra numbers without replacing them 
+    console.log(num);   
+    
+    
+    let num1=num.slice(3,5);   // creates new array does not make changes in tha original array.
+    console.log(num1);
+
+
+
+
+</script>
+</html>

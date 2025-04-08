@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+    <h1> Santhosh</h1>
+</body>
+<script>
+    //     var santhosh = {'name':"Santhosh",'Roll':551,'age':20,'clg':"BVRIT"};
+    //     for(const key in santhosh)
+    //     {
+    //         document.write(key+" ");
+    //         document.write("<h1>"+"<br>"+santhosh[key]+"</h1>");
+    //     }
+    //    document.write("<h1>"+santhosh.name+"<br>"+"</h1>");
+    //    santhosh.age=21;
+    //    document.write("<h1>"+santhosh.age+"<br>"+"</h1>");
+
+    var santhosh = new Object();
+    santhosh.name = "Santhosh";
+    santhosh.roll = 551;
+    santhosh.age = 20;
+    santhosh.clg = "BVRIT";
+    for (const key in santhosh) {
+        document.write("<br>");
+        document.write("<h1>" +key+":"+santhosh[key] +"<h1>");
+    }
+    document.write("<h1>" + santhosh.name + "<br>" + "</h1>");
+    santhosh.age = 21;
+    document.write("<h1>" + santhosh.age + "<br>" + "</h1>");
+</script>
+
+</html>

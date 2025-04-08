@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    //array map method
+    let arr1=[25,43,29,34];
+    let a1=arr1.map((value,index,array)=>{           //we can perform any operations during returnoing the values at end 
+        console.log(value,index,array);   //map funnction creates new array by performing some operations on array elements
+        return value+index;                     // we can use or cannot use index and array as arguments.                            
+    })
+    console.log(a1);
+
+
+    // array filter method
+
+    let arr2 =[25,43,29,,2,4,14,7,23,34];   // creates new array based on the given condition.original array does not change
+    let a2 = arr2.filter((a)=>{
+        return a<10;
+    })
+    console.log(a2);
+
+
+    //reduce method
+
+    // let arr3=[25,43,29,,2,4,14,7,23,34];  //reduce is an array for a single value
+    // let a3=arr3.reduce((h1,h2)=>{
+    //     return h1+h2;
+    // })
+    // console.log(a3);
+
+    let arr3=[25,43,29,,2,4,14,7,23,34];  
+    const add=(h1,h2)=>{
+        return h1+h2;
+    }
+    let a3=arr3.reduce(add);
+    console.log(a3);
+
+
+</script>
+</html>

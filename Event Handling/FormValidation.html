@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title> Validation Form </title>
+        <style>
+        form{
+            width: 500px;
+            padding: 20px;
+            margin: 0 auto; /* centers the form horizontally */
+            border: 2px solid #ccc;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* optional: subtle shadow */
+            background-color: #f9f9f9; 
+            margin-top:30px;
+        }
+        .form h1{
+            margin-top: 10px;
+            color: #369e47;
+            font-size: 40px;
+            text-align: center;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .form-group label{
+            width:200px;
+            font-weight: bold;
+            font-size:20px;
+        }
+
+        .form-group input{
+            width:300px;
+            padding: 8px;
+            font-size:14px;
+        }
+        
+        .submit-button button{
+            width:100px;
+            background-color: #369e47;
+            display: block;
+            font-weight: bold;
+            height:30px;
+            margin: auto; 
+            cursor: pointer;
+            border:none;
+            border-radius: 2px;
+        }
+        </style>
+    </head>
+    
+    <body>
+        <div>
+        
+            <form class="form" id="Registrationform">
+                <h1>Registration Form</h1>
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input id="name" type="text">
+                </div>
+                
+                <div class="form-group">
+                    <label>Roll No:</label>
+                    <input type="number" id="rollno">
+                </div>
+
+                <div class="form-group">
+                    <label>Age:</label>
+                    <input type="number" id="age">
+                </div>
+
+                <div class="form-group">
+                    <label>Mobile No:</label>
+                    <input type="number" id="mobile">
+                </div>
+
+                <div class="form-group">
+                    <label>E-Mail:</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label>Password:</label>
+                    <input type="password" id=password>
+                </div>
+
+                <div class="form-group">
+                    <label>Confirm Password:</label>
+                    <input type="password" id="confirmpassword">
+                </div>
+                <div class="submit-button">
+                    <button id="submit" type="submit">
+                        Submit
+                    </button>
+                </div>
+                
+            </form>
+        </div>
+        <script>
+            document.getElementById("Registrationform").addEventListener("submit",function(event){
+                event.preventDefault();
+                const name=document.getElementById("name").value;
+                const roll=document.getElementById("rollno").value;
+                const age=document.getElementById("age").value;
+                const mobile=document.getElementById("mobile").value;
+                const email=document.getElementById("email").value;
+
+                const password=document.getElementById("password").value;
+                const confirmpassword=document.getElementById("confirmpassword").value;
+                if(password!=confirmpassword){
+                    alert("Password Mismatch");
+                }
+                else{
+                    alert("User Details\nName: "+name+" \nRoll No: "+roll+"\nAge: "+age+"\nMobile No: "+mobile+"\nEmail: "+email);
+                }
+            });
+        </script>
+    </body>
+</html>

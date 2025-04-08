@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Handling Example</title>
+</head>
+<body>
+
+  <h2>Event Handling Demo</h2>
+
+  <!-- Click -->
+  <button onclick="alert('Inline Click!')">Inline Click</button>
+
+  <!-- Mouseover -->
+  <div id="hoverBox" style="width:100px; height:100px; background-color:skyblue; margin-top:10px;">
+    Hover Me
+  </div>
+
+  <!-- Key Press -->
+  <input type="text" id="keyInput" placeholder="Type something..." />
+
+  <!-- JS Script -->
+  <script>
+    // addEventListener for mouseover
+    document.getElementById("hoverBox").addEventListener("mouseover", function() {
+      this.style.backgroundColor = "orange";
+    });
+
+    document.getElementById("hoverBox").addEventListener("mouseout", function() {
+      this.style.backgroundColor = "skyblue";
+    });
+
+    // Keydown event
+    document.getElementById("keyInput").addEventListener("keydown", function(e) {
+      console.log("Key Pressed: ", e.key);
+    });
+  </script>
+
+</body>
+</html>

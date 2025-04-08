@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let name ="Santhosh\";
+    console.log(name.length);
+    console.log(name.toUpperCase());
+    console.log(name.toLowerCase());
+    console.log(name.slice(2,4));
+    console.log(name.slice(2));
+    console.log(name.slice(2,8));
+    console.log(name.replace("San","san"));
+    name ="Santhosh";
+
+    let friend="Jayanth";
+    console.log(name.concat(" is friend of ",friend," Ok"));
+    let friend2="    Kiran    ";
+    console.log(friend2.trim());
+
+
+    const sentence ="I am Santhosh from CSE A";
+    const word = "Rahul";
+    console.log(sentence.includes(word));
+    console.log(`The word "${word}" ${sentence.includes(word)? 'is':'is not'} in the sentence`);
+
+
+    let str = "Please give us Rs 1000";
+    let amount =str.slice("Please give us Rs ".length);
+    console.log(amount);
+    amount=Number.parseInt(amount);
+    console.log(typeof amount);
+
+
+</script>
+</html>

@@ -1,0 +1,110 @@
+JavaScript:
+
+Variables
+Declaration of variables.
+var,let,const.
+var -- can be used globally in any blocks.can be redeclared.
+let -- only belongs to or accessible to that particular block.cannot be redeclared but assined a new value.
+
+Primitive datatypes  -- NNSSBBU - null,number,symbol,string,bigint,boolean,undefined
+Datatypes - String,Number,BigInt,Boolean,Object.
+Boolean - false ,true.
+
+a="45"
+a=Number.parseInt(a) // convert the string to a number
+
+
+Operators-
+Arithmetic -   +,-,*,/,%,++,--
+Comparision -  ==,===,!=,!==,>,<,>=,<=
+Bitwise     -  &,|,^,~,<<,>>,>>>
+logical     -  &&,||,!
+Assignment  -  -=,+=,=,*=,/=,%=
+Special     - (?:), , , delete,in,instanceof,new,typeof,void,yeild.
+
+conditional statements:
+
+If, Else,Else if.
+
+For,While,Do while,For-in,For of.
+for of loop  is used for strings and arrays.
+for(let variable name of array or string name){
+ statements.
+}
+
+for in loop are used for arraya,objects.
+
+(let variable name in object name){
+ statements.
+}
+
+
+
+Functions:
+
+Two types of declarations of functions in javascript.
+1)function functionname (parameters){
+     statements;
+}
+
+2) const functionname =(parameters)=>{
+    statements;
+}
+
+Types of objects:
+Array
+Object
+String 
+Date
+
+
+Strings :
+Strings values can be given using single quotes or double quotes
+
+Array -
+3 ways to construct arrays
+1)by array literal
+2)By creating instance of array directly (using new keyword)
+3)By using an array constructor (using new keyword)
+
+
+String -
+Strings are immutable.
+2 ways to construct 
+1)By string literal 
+2)By string object (using new keyword)
+
+
+Array -
+Arrays are mutable
+Array.from  is a method used to create an array from any other objects. ex: html collection is a object,String.
+
+
+Date - used to get year mont and day.
+you can use 4 variant of Date constructor to create date object.
+1) Date()
+2)Date(milliseconds)
+3)Date(dateString)
+4)Date(year,month,day,hours,minutes,seconds,milliseconds)
+
+
+Window Object-
+Represents a window in the browser.An object of the window created automatically by the browser.
+It is not the object of the javascript.The javascript object are string , array,date etc.
+It directly comuunicates with the window.
+
+BOM -browser object model
+DOM - Document object model
+
+different methods of window objects.
+1)alert()
+2)confirm()
+3)prompt()
+4)open()
+5)settimeout()
+6)timeinterval()
+7)close()
+8)clear()
+9)console()
+
+
